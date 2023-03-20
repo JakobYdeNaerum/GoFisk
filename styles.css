@@ -12,6 +12,10 @@ font-size: 30px;
 
 } 
 
+h3 {
+font-size: 25px;
+}
+
 h4 {
 
 font-size: 14px;
@@ -21,6 +25,10 @@ font-size: 14px;
 h5 {
 
 font-size: 10px;
+}
+
+h6 {
+ font-size: 15px;	
 }
 
 
@@ -252,4 +260,15 @@ main {
 	width: 100px;
 	height: 100px;
   }
-  
+
+
+/* selve layout af artiklerne */
+
+.resume {
+
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 50%;
+margin-left: 80px;
+	
+}
