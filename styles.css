@@ -1,0 +1,255 @@
+/* basics som font osv. */
+
+h1{
+
+font-size: 40px;
+
+}
+
+h2 {
+
+font-size: 30px;
+
+} 
+
+h4 {
+
+font-size: 14px;
+
+}
+
+h5 {
+
+font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_______________________________________________________________________________________________________________________________________*/
+/* header */
+
+/* design af nav bar + logo */
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+nav {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	margin: 0 20px;
+	text-decoration: none;
+	color: #333;
+}
+
+nav a:hover {
+	color: #666;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.logo-container img {
+	height: 200px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_______________________________________________________________________________________________________________________________________*/
+/* main */
+
+/* forside design med billede */
+main {
+	align-items: center;
+	margin-top: 100px
+	
+	
+}
+
+.image-container {
+	margin-top: 150px;
+	position: relative;
+	width: 100%;
+	height: 983px;
+}
+
+.image-container img {
+	
+	width: 100%;
+	height: 100%;
+	
+}
+
+.billed-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+.billed-text2 {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* forside kort/artikler layout  */
+
+
+
+
+#kortkontrol{
+	margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.kort {
+	display: inline-block;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 20px;
+	max-width: 250px;
+}
+
+
+
+
+.kort:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.kort img {
+	height: 175px;
+	width: 250px;
+	
+}
+
+.kort-titel {
+
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.kort-text {
+	display: flex;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+/* overskrift og stort billede + små artikler og layout */
+
+.container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .venstre {
+	flex-basis: 90%;
+  }
+.venstre img {
+	width: 100%;
+	height: 80%;
+}
+
+  .kontrolhøjrebox{
+
+	margin-left: 100px;
+
+	
+	
+}
+  
+  .højre {
+	position: relative;
+	flex-basis: 10%;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .teksthøjreboks{
+	margin-left: 20px;
+	flex-direction: column;
+  }
+
+  .box-læsogså {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 10px;
+  }
+  
+  .box-læsogså img {
+	width: 100px;
+	height: 100px;
+  }
+  
