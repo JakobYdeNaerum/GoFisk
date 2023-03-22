@@ -59,6 +59,10 @@ p{
 hyphens: auto;
 }
 
+main{
+
+background-color: lightblue;
+}
 
 
 
@@ -162,7 +166,7 @@ nav a:hover {
 /* forside design med billede */
 main {
 	align-items: center;
-	margin-top: 50px
+	margin-top: 25px
 }
 
 .image-container {
