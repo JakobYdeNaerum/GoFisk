@@ -73,12 +73,14 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 nav a {
 	margin: 0 20px;
 	text-decoration: none;
 	color: #333;
+	cursor: pointer;
 }
 
 nav a:hover {
@@ -230,6 +232,7 @@ main {
 
 .venstre h1{
 	margin-left: 80px;
+	margin-right: 100px;
 }
 
 .kontrolhøjrebox{
@@ -277,6 +280,10 @@ main {
 	margin-left: 80px;
 }
 
+.resumep{
+	font-size: 18px;
+	
+}
 
 
 
@@ -289,18 +296,20 @@ main {
 	margin-left: 50px;
 	margin-right: 150px;
 	height: 600px;
+	margin-top: 100px;
 	
 	
 }
  
 .fakta-box h3 {
 
-	margin-left: 30px;
+	margin-left: 40px;
 	
 }
   
 .fakta-box p {
-	margin-left: 30px;
+	margin-top: 50px;
+	margin-left: 50px;
 	
 }
   
@@ -324,16 +333,124 @@ margin-top: 100px;
 	padding: 20px;
 	box-sizing: border-box;
 	text-align: center;
-	margin-top: 350px;
-  }
+	margin-top: 200px;
+}
+
   
-  .artikler-billede img {
+.artikler-billede img {
 	border-radius: 10px;
 	max-width: 100%;
 	height: auto;
 	margin: 0 auto;
 	display: block;
+}
+
+
+.artikler-fiskeudstyr {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 370px;
+}
+  
+.artikler-fiskeudstyr img {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.artikler-fiskeline {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 300px;
+}
+
+  
+.artikler-fiskeline img {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+
+.artikler-fisketur {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 300px;
+}
+  
+.artikler-fisketur img {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.artikler-blink {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 450px;
+}
+  
+.artikler-blink img {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+/* fiskespots specialside med google maps lokationer */
+
+.kontrol-fiskelokationer {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-left: 100px;
+  }
+  
+  .fiske-lokationer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	max-width: 1100px;
+	margin-top: 20px;
+  }
+  
+  .tekst-lokationer {
+	padding: 20px;
+	
   }
 
+  .lokationer-tekst {
+	margin-right: 700px;
+	
+  }
 
+  .lokationer{
 
+	padding-top: 75px;
+
+  }
+  
+  
+  iframe {
+	border: 0;
+	width: 600px;
+	height: 400px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
