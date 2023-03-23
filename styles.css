@@ -15,11 +15,11 @@ h1{
 
 h2 {
 
-font-size: 30px;
-font-family: filson-pro, sans-serif;
-font-weight: 700;
-font-style: normal;
-color: #153651;
+	font-size: 30px;
+	font-family: filson-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #153651;
 
 } 
 
@@ -29,61 +29,56 @@ color: #153651;
 }
 
 h3 {
-font-size: 25px;
+	font-size: 25px;
+	font-family: filson-pro, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color:#153651;	
 }
 
 h4 {
 
-font-size: 14px;
-font-family: filson-pro, sans-serif;
-font-weight: 700;
-font-style: normal;
-color: #153651;
+	font-size: 14px;
+	font-family: filson-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #153651;
 
 }
 
 h5 {
 
-font-size: 10px;
-font-family: soleil, sans-serif;
-font-weight: 500;
-font-style: normal;
-color: #6b8696;
+	font-size: 10px;
+	font-family: filson-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #6b8696;
+
+}
+
+.credit-til-migselv{
+	margin-top: 10px;
+	margin-left: 100px;
 
 }
 
 h6 {
- font-size: 15px;	
+	font-size: 18px;
+	font-family: filson-pro, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color:#153651;	
 }
+
 p{
-hyphens: auto;
+ hyphens: auto;
+ font-family: soleil, sans-serif;
+ font-weight: 500;
+ font-style: normal;
+ color: #4e6f82;
+ font-size: 16px;
+ line-height: 1.5;
 }
-
-main{
-
-background-color: lightblue;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*_______________________________________________________________________________________________________________________________________*/
@@ -96,6 +91,32 @@ header {
 	flex-direction: column;
 	align-items: center;
 	padding: 20px;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	position: relative;
+    animation-name: svøm;
+    animation-duration: 1s;
+}
+@keyframes svøm {
+	0%   {right:0px; top:0px;}
+	25%  {right:200px; top:0px;}
+  
+}
+
+.logo-container img {
+	height: 100px;
+	margin-right: 10px;
+	padding-bottom: 20px;
+}
+#linje{
+	border-bottom: black solid 2px; 
+	width: 50%;	
+	margin-bottom: 20px;
 }
 
 nav {
@@ -114,45 +135,16 @@ nav a {
 	font-weight: 700;
 	font-style: normal;
 	color: #153651;
-	
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
 }
+
 
 nav a:hover {
-	color: #666;
-	cursor: pointer;
-}
-
-.logo-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
-	border-bottom: black solid 1px; 
-	width: 50%;
-}
-
-.logo-container img {
-	height: 100px;
-	margin-right: 10px;
-	padding-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	background-color: white;
+	border-bottom: 2px solid black;
+  }
+  
+  
 
 
 
@@ -166,7 +158,7 @@ nav a:hover {
 /* forside design med billede */
 main {
 	align-items: center;
-	margin-top: 25px
+	margin-top: 50px;
 }
 
 .image-container {
@@ -179,11 +171,12 @@ main {
 .image-container img {
 	width: 100%;
 	height: 100%;
+	
 }
 
 .billed-text {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #fff;
@@ -191,6 +184,7 @@ main {
 	font-family: filson-pro, sans-serif;
 	font-weight: 700;
 	font-style: normal;
+
 }
 
 .billed-text2 {
@@ -237,8 +231,8 @@ main {
 
 
 .kort:hover {
-	transform: translateY(-5px);
-	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+	transform: translateY(-10px);
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
 	
 }
 
@@ -250,16 +244,17 @@ main {
 	
 }
 
-.kort-titel {
+.kort-text {
 	font-weight: bold;
 	margin-bottom: 10px;
 	padding-left: 10px;
 }
 
-.kort-text {
+.kort-titel {
 	display: flex;
 	text-align: left;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 	padding-left: 10px ;
 	
 }
@@ -272,13 +267,14 @@ main {
 }
   
 .venstre {
-	flex-basis: 90%;
+	flex-basis: 80%;
 }
 
 .venstre img {
 	width: 80%;
 	height: 80%;
 	margin-left: 80px;
+	margin-top: 20px;
 }
 
 .venstre h1{
@@ -286,28 +282,29 @@ main {
 	margin-right: 100px;
 }
 
-.kontrolhøjrebox{
+.kontrolhøjrebox h2{
 
- margin-left: 100px;	
+ margin-left: 20px;	
 }
   
 .højre {
 	position: relative;
-	flex-basis: 10%;
+	flex-basis: 20%;
 	display: flex;
 	flex-direction: column;
 }
 
 .teksthøjreboks{
-	margin-left: 20px;
+	padding: 35px;
 	flex-direction: column;
+	
 }
 
 .box-læsogså {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 10px;
+	padding: 20px;
 }
   
 .box-læsogså img {
@@ -316,11 +313,11 @@ main {
 }
 
 
-/* selve layout af resume + faktaboks og artiklerne */
+/* selve layout af resume + faktaboks og artiklerne for beginners guide og artidernes fiskeri */
 
 .fakta-box-setup{
 	display: flex;
-	margin-top: 200px;
+	margin-top: 50px;
 	justify-content: space-between;
 }
 
@@ -332,7 +329,10 @@ main {
 }
 
 .resumep{
+	margin-top: 70px;
 	font-size: 18px;
+	margin-left: 80px;
+	width: 50%;
 	
 }
 
@@ -346,21 +346,22 @@ main {
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 150px;
-	height: 600px;
-	margin-top: 100px;
-	
-	
+	height: 700px;
+	margin-top: 20px;
 }
  
 .fakta-box h3 {
 
 	margin-left: 40px;
+	margin-top: 40px;
+	color: #fff;
+
 	
 }
   
 .fakta-box p {
-	margin-top: 50px;
-	margin-left: 50px;
+	padding: 30px;
+	color: white;
 	
 }
   
@@ -379,7 +380,65 @@ margin-top: 100px;
 	padding-right: 75px;
 }
 
-.artikler-billede {
+
+
+#artikler-fiskeudstyr {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 600px;
+	margin-left: 10px;
+}
+  
+#artikler-fiskeudstyr img {
+	border-radius: 20px;
+	max-width: 100%;
+	
+}
+
+#artikler-fiskeline {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 300px;
+}
+
+  
+#artikler-fiskeline img {
+	border-radius: 10px;
+	max-width: 100%;
+	
+}
+
+
+#artikler-fisketur {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 400px;
+}
+  
+#artikler-fisketur img {
+	border-radius: 20px;
+	max-width: 100%;
+}
+
+#artikler-blink {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 450px;
+}
+  
+#artikler-blink img {
+	border-radius: 20px;
+	max-width: 100%;
+}
+#artikler-natfiskeri {
 	flex: 1;
 	padding: 20px;
 	box-sizing: border-box;
@@ -388,87 +447,23 @@ margin-top: 100px;
 }
 
   
-.artikler-billede img {
-	border-radius: 10px;
+#artikler-natfiskeri img {
+	border-radius: 20px;
 	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: block;
+	
 }
 
 
-.artikler-fiskeudstyr {
-	flex: 1;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
-	margin-top: 370px;
-}
-  
-.artikler-fiskeudstyr img {
-	border-radius: 10px;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: block;
-}
 
-.artikler-fiskeline {
-	flex: 1;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
-	margin-top: 300px;
-}
-
-  
-.artikler-fiskeline img {
-	border-radius: 10px;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: block;
-}
-
-
-.artikler-fisketur {
-	flex: 1;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
-	margin-top: 300px;
-}
-  
-.artikler-fisketur img {
-	border-radius: 10px;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: block;
-}
-
-.artikler-blink {
-	flex: 1;
-	padding: 20px;
-	box-sizing: border-box;
-	text-align: center;
-	margin-top: 450px;
-}
-  
-.artikler-blink img {
-	border-radius: 10px;
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
-	display: block;
-}
+ 
 /* fiskespots specialside med google maps lokationer */
 
 .kontrol-fiskelokationer {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	margin-left: 100px;
+	margin-left: 80px;
+	margin-top: 100px;
   }
   
   .fiske-lokationer {
