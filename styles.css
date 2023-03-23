@@ -38,7 +38,7 @@ h3 {
 
 h4 {
 
-	font-size: 14px;
+	font-size: 18px;
 	font-family: filson-pro, sans-serif;
 	font-weight: 700;
 	font-style: normal;
@@ -79,6 +79,11 @@ p{
  font-size: 16px;
  line-height: 1.5;
 }
+p a{
+	text-decoration: none;
+	text-decoration-line: underline;
+	color: black;
+}
 
 
 /*_______________________________________________________________________________________________________________________________________*/
@@ -102,10 +107,10 @@ header {
     animation-name: svøm;
     animation-duration: 1s;
 }
+
 @keyframes svøm {
 	0%   {right:0px; top:0px;}
-	25%  {right:200px; top:0px;}
-  
+	25%  {right:200px; top:0px;} 
 }
 
 .logo-container img {
@@ -113,6 +118,7 @@ header {
 	margin-right: 10px;
 	padding-bottom: 20px;
 }
+
 #linje{
 	border-bottom: black solid 2px; 
 	width: 50%;	
@@ -129,7 +135,7 @@ nav {
 }
 
 nav a {
-	margin: 0 20px;
+	margin: 0 40px;
 	text-decoration: none;
 	font-family: "soleil", sans-serif;
 	font-weight: 700;
@@ -142,7 +148,7 @@ nav a {
 nav a:hover {
 	background-color: white;
 	border-bottom: 2px solid black;
-  }
+}
   
   
 
@@ -159,6 +165,7 @@ nav a:hover {
 main {
 	align-items: center;
 	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
 .image-container {
@@ -205,15 +212,9 @@ main {
 #kortkontrol{
 	margin-top: 25px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#kortkontrol a{
-	text-decoration:none;
-	color: black;
-	
-}
 
 .kort {
 	display: inline-block;
@@ -244,22 +245,14 @@ main {
 	
 }
 
-.kort-text {
-	font-weight: bold;
-	margin-bottom: 10px;
-	padding-left: 10px;
-}
-
 .kort-titel {
-	display: flex;
-	text-align: left;
+	margin-bottom: 10px;
 	margin-top: 5px;
-	margin-bottom: 15px;
-	padding-left: 10px ;
+
 	
 }
 
-/* overskrift og stort billede + små artikler og layout */
+/* overskrift og stort billede + små artikler og layout - på siderne */
 
 .container {
 	display: flex;
@@ -290,21 +283,27 @@ main {
 .højre {
 	position: relative;
 	flex-basis: 20%;
-	display: flex;
 	flex-direction: column;
 }
 
-.teksthøjreboks{
-	padding: 35px;
-	flex-direction: column;
-	
-}
 
 .box-læsogså {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	padding: 20px;
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.teksthøjreboks{
+	padding: 35px;	
+}
+
+.box-læsogså:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	
 }
   
 .box-læsogså img {
@@ -314,6 +313,16 @@ main {
 
 
 /* selve layout af resume + faktaboks og artiklerne for beginners guide og artidernes fiskeri */
+
+
+.resumep{
+	margin-top: 70px;
+	font-size: 18px;
+	margin-left: 80px;
+	width: 50%;
+	
+}
+
 
 .fakta-box-setup{
 	display: flex;
@@ -327,15 +336,6 @@ main {
 	box-sizing: border-box;
 	margin-left: 80px;
 }
-
-.resumep{
-	margin-top: 70px;
-	font-size: 18px;
-	margin-left: 80px;
-	width: 50%;
-	
-}
-
 
 
 .fakta-box {
@@ -351,12 +351,9 @@ main {
 }
  
 .fakta-box h3 {
-
 	margin-left: 40px;
 	margin-top: 40px;
 	color: #fff;
-
-	
 }
   
 .fakta-box p {
@@ -367,9 +364,8 @@ main {
   
 
 .artiklerlayout{
-display: flex;
-
-margin-top: 100px;
+	display: flex;
+	margin-top: 100px;
 }
 
 .artikler{
@@ -431,7 +427,7 @@ margin-top: 100px;
 	padding: 20px;
 	box-sizing: border-box;
 	text-align: center;
-	margin-top: 450px;
+	margin-top: 500px;
 }
   
 #artikler-blink img {
